@@ -53,11 +53,6 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 
-- Terceiro
-
-https://github.com/tesseract-ocr/tesseract.git
-
-
 não pode deixar nem 1 espaço, senão não vai funcionar clicando no save changes.
 
 Foto do passo: https://telegra.ph/file/97d062bcf71151ceec02a.jpg
@@ -80,11 +75,17 @@ Cole o e-mail do heroku, aperte enter, depois coloque a senha e dê enter..
 
 cd /sdcard/aleatory-md
 
-
 > 2 Categoria >
 
 rm -rf .git
 
+> 2.1 Categoria >
+
+git config --global user.email "blablablabla@gmail.com" 
+
+git config --global user.name "blabla" 
+
+Cole os 2 no termux, não precisa editar nada.
 
 > 3 Categoria >
 
@@ -93,23 +94,22 @@ git init
 
 > 4 Categoria 
 
+heroku git:remote -a nomedoapp
+
+
+Em nome do app você deve colocar o nome do new app que você criou lá no site.
+
+
+> 5 Categoria >
+
 git add . 
 
 
 Vai demorar um pouco 
 
-> 5 Categoria >
-
-git commit -am "blabla"
-
-
 > 6 Categoria >
 
-
-heroku git:remote -a nomedoapp
-
-
-Em nome do app você deve colocar o nome do new app que você criou lá no site.
+git commit -am "blabla"
 
 
 > 7 Categoria >
