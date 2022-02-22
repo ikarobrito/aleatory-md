@@ -65,9 +65,58 @@ Foto do passo: https://telegra.ph/file/97d062bcf71151ceec02a.jpg
 
 Depois vá para o termux e digite ou cole isso. 
 
+npm i -g npm@6 && npm i heroku -g
+
+
+Depois isso >
+
+
 heroku login -i
 
+
 Cole o e-mail do heroku, aperte enter, depois coloque a senha e dê enter.. 
+
+> 1 Categoria >
+
+cd /sdcard/aleatory-md
+
+
+> 2 Categoria >
+
+rm -rf .git
+
+
+> 3 Categoria >
+
+git init 
+
+
+> 4 Categoria 
+
+git add . 
+
+
+Vai demorar um pouco 
+
+> 5 Categoria >
+
+git commit -am "blabla"
+
+
+> 6 Categoria >
+
+
+heroku git:remote -a nomedoapp
+
+
+Em nome do app você deve colocar o nome do new app que você criou lá no site.
+
+
+> 7 Categoria >
+
+git push heroku master 
+
+
 
 
 Pronto, agora conectou ao heroku. 
@@ -84,7 +133,7 @@ Você vai clicar nesse botão, vai aparecer um botão lá, clique no lápis, ape
 
 
 (Como Atualizar algo que editei no bot, para o heroku??:
-atualizar como assim aleatory? : exemplo> se você quer ativar alguma função do grupo, você deve desligar o botão no heroku, depois ir no termux, ligar o bot lá, esperar atualizar as credenciais, demora um pouco, caso demore muito, apague o "baileys_store_multi.json", e ligue novamente, pra desligar e ligar, apenas segure o volume de - do celular e aperta a letra C do teclado. 
+atualizar como assim aleatory? : exemplo> se você quer ativar alguma função do grupo, você deve desligar o botão no heroku, depois ir no termux, ligar o bot lá, esperar atualizar as credenciais, demora um pouco, caso demore muito, apague o "baileys_store_multi.json", e ligue novamente, pra desligar e ligar, apenas segure o volume de menos do celular e aperta a letra C do teclado. 
 
 Caso continue bugando apague o qrcode "auth_info_multi.json", que se localizara dentro da pasta do bot que se chama aleatory-md, que está  dentro do armazenamento do seu celular, se quiser apagar por comando só digitar isso no termux e dá enter:  rm auth_info_multi.json  e   rm baileys_store.json  ,bom agora o resto é com vocês, vamos pra próxima parte.).then(res => {
   
@@ -105,8 +154,8 @@ Caso continue bugando apague o qrcode "auth_info_multi.json", que se localizara 
  
  
  cd /sdcard/aleatory-md 
- 
- 
+
+
  Depois :
  
  sh heroku.sh
